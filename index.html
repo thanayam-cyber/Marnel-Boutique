@@ -70,7 +70,7 @@ footer{background:#14110d;color:#e9e2d4;padding:56px 24px 24px}.fg{max-width:106
 </style></head><body>
 <div class="ann">Opening soon · Weligama Bay</div>
 <header class="nav"><a class="logo" href="#top"><svg class="mk" viewBox="-50 -50 100 100"></svg><i><b>Manel</b><span>Boutique Hotel</span></i></a>
-<nav><a href="#rooms">Rooms</a><a href="#experience">Experience</a><a href="#restaurant">Restaurant</a><a href="#explore">Weligama</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+<nav><a href="#rooms">Rooms</a><a href="#experience">Experience</a><a href="#restaurant">Restaurant</a><a href="#explore">Weligama</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a><a href="#contact">Contact</a></nav>
 <a class="btn sm" href="#book">Enquire now</a></header>
 
 <section class="hero" id="top" data-bg="hero"><div class="hc"><svg class="mk" viewBox="-50 -50 100 100" style="width:64px;height:64px;color:#e9c28f"></svg><small class="k" style="color:#e9c28fcc">Boutique hotel · Weligama · 8 rooms</small>
@@ -97,7 +97,7 @@ footer{background:#14110d;color:#e9e2d4;padding:56px 24px 24px}.fg{max-width:106
 <section class="alt" id="restaurant"><div class="wrap fade"><div class="split" style="margin-bottom:44px"><div><small class="k">Dining</small><h2 style="margin:12px 0 16px">Manel <em>Restaurant</em></h2><p>Start the day with breakfast and fresh juices. Free Wi-Fi and free parking are available at the hotel.</p><p>Surf lessons, whale watching and airport transfers can be arranged for you.</p><a class="btn" href="#book">Ask about dining</a></div><img data-im="res" alt="Manel Restaurant" style="aspect-ratio:4/3"></div>
 <small class="k">From our kitchen</small><h3 style="margin:8px 0 0;font-size:34px">Food <em>gallery</em></h3>
 <div class="food" id="food"></div><p class="note" id="fn" style="margin-top:14px"></p>
-<div class="panel" id="adm" hidden></div></div></section>
+</div></section>
 <section class="wrap fade" id="explore"><small class="k">Near us</small><h2 style="margin-top:10px">Everything <em>close by</em></h2><p class="note" style="margin-top:12px">2 mins to the beach · 15 mins to Mirissa · 2 hrs from Colombo Airport</p>
 <div class="rooms">
 <div class="act"><small>2 mins walk</small><h3>Weligama Surf Beach</h3><p>A wide bay known for beginner-friendly surf. Surfboard rental and surf lessons available.</p></div>
@@ -118,10 +118,39 @@ footer{background:#14110d;color:#e9e2d4;padding:56px 24px 24px}.fg{max-width:106
 <label>Notes (optional)</label><textarea id="nt" rows="2"></textarea>
 <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn" id="send" style="background:#25D366;border-color:#25D366">Enquire on WhatsApp</button><button class="btn ol" id="mail">Enquire by email</button></div><p class="note" style="margin-top:12px">Maximum 3 adults per booking. For a bigger group, please send one enquiry per room.</p><p class="note" id="m"></p></div></section>
 
+
+<style>
+/* Manèl Visit section */
+.visit-section{background:var(--alt);padding:76px 24px}
+.visit-inner{max-width:1060px;margin:0 auto;display:grid;grid-template-columns:1fr 1.15fr;gap:42px;align-items:center}
+.visit-copy .visit-address{font:500 27px/1.25 'Cormorant Garamond',Georgia,serif;margin:14px 0;color:var(--tx)}
+.visit-copy p{color:var(--mu);max-width:420px}
+.visit-points{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 26px}
+.visit-points span{border:1px solid var(--bd);border-radius:30px;padding:7px 12px;font-size:12px;color:var(--mu)}
+.visit-map{min-height:340px;border:1px solid var(--bd);border-radius:6px;overflow:hidden;background:var(--card)}
+.visit-map iframe{display:block;width:100%;height:340px;border:0}
+@media(max-width:760px){.visit-inner{grid-template-columns:1fr;gap:26px}.visit-section{padding:58px 20px}.visit-map,.visit-map iframe{min-height:280px;height:280px}}
+</style>
+<section class="visit-section" id="visit">
+  <div class="visit-inner">
+    <div class="visit-copy">
+      <small class="k">Visit us</small>
+      <h2 style="margin-top:10px">Find your way to <em>Manèl</em></h2>
+      <div class="visit-address">Manèl Boutique Hotels<br>Weligama Bay, Weligama 81700<br>Sri Lanka</div>
+      <p>A relaxed boutique stay just a short walk from Weligama Surf Beach. We look forward to welcoming you.</p>
+      <div class="visit-points"><span>2 min walk to the beach</span><span>Free guest parking</span><span>Weligama Bay</span></div>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Weligama+Bay+Weligama+81700+Sri+Lanka" target="_blank" rel="noopener">Get directions</a>
+    </div>
+    <div class="visit-map" aria-label="Map showing Weligama Bay, Sri Lanka">
+      <iframe title="Map to Manèl Boutique Hotels, Weligama Bay" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Weligama%20Bay%2C%20Weligama%2081700%2C%20Sri%20Lanka&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
 <footer id="contact"><div class="fg"><div><div class="logo" style="color:#fff"><svg class="mk" viewBox="-50 -50 100 100" style="color:#e9c28f"></svg><i><b>Manel</b><span style="color:#b9b19f">Boutique Hotel</span></i></div><p style="margin-top:12px">Where the Bay Meets Barefoot Luxury. Your Bay. Your Boutique.</p></div>
 <div><small class="k" style="color:#b9b19f">Visit</small><p data-c="address"></p><a data-c="map" target="_blank" rel="noopener" hidden>Open in Maps</a></div>
 <div><small class="k" style="color:#b9b19f">Contact</small><p data-c="phone"></p><p data-c="email"></p><p><a href="https://wa.me/94772321412" target="_blank" rel="noopener">Message us on WhatsApp</a></p><p><a href="https://instagram.com/manelboutique.weligama" target="_blank" rel="noopener">Instagram @manelboutique.weligama</a></p></div></div>
-<div class="copy">© 2026 Manel Boutique<button class="lnk" id="adminBtn">Owner login</button></div></footer>
+<div class="copy">© 2026 Manel Boutique</div></footer>
 <a class="fab" href="https://wa.me/94772321412" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
 <div id="lb" hidden><img alt=""></div>
 
@@ -151,21 +180,17 @@ function enq(){const v=id=>$(id).value.trim(),m=$("m"),a=+v("g");
  return `Hello Manel Boutique, I would like to enquire about a stay.\nName: ${v("n")}\nPhone: ${v("p")}\nCheck-in: ${v("ci")}\nCheck-out: ${v("co")}\nAdults: ${a}\nRoom: ${$("r").value}`+(v("nt")?`\nNotes: ${v("nt")}`:"")}
 $("send").onclick=()=>{const t=enq();if(!t)return;const n=(CFG.wa||"").replace(/\D/g,""),u="https://wa.me/"+n+"?text="+encodeURIComponent(t);$("m").innerHTML='Opening WhatsApp… <a href="'+u+'" target="_blank" rel="noopener" style="color:var(--ac)">Tap here if it did not open</a>';window.open(u,"_blank")};
 $("mail").onclick=()=>{const t=enq();if(!t)return;const u="mailto:"+CFG.email+"?subject="+encodeURIComponent("Booking enquiry - Manel Boutique")+"&body="+encodeURIComponent(t);$("m").innerHTML='Opening your email app… <a href="'+u+'" style="color:var(--ac)">Tap here if it did not open</a>, or write to '+CFG.email;window.location.href=u};
-let FOOD=[],isAdmin=false,adminOpen=false,assets=null,db=null;
-function renderFood(){const ad=isAdmin&&adminOpen;$("food").innerHTML=FOOD.map((u,i)=>`<div><img loading="lazy" src="${u}" alt="Food at Manel Restaurant">${ad?`<button data-fd="${i}">Delete</button>`:""}</div>`).join("");$("fn").textContent=FOOD.length?"":"Food photos coming soon."}
-function renderAdm(){const a=$("adm");a.hidden=!adminOpen;if(!adminOpen)return;
- a.innerHTML=isAdmin?'<h3 style="font-size:24px">Owner: food photos</h3><p class="note">Pick one or more photos. They upload and save automatically. Use Delete on a photo to remove it.</p><input type="file" id="ff" accept="image/*" multiple><p class="note" id="fm"></p>':'<b>Owner login required</b><p class="note">Open this page signed in to Claude as the site owner or an invited editor to manage photos.</p>'}
-const shrink=f=>new Promise((ok,no)=>{const im=new Image();im.onload=()=>{const z=Math.min(1,1200/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=im.width*z;c.height=im.height*z;c.getContext("2d").drawImage(im,0,0,c.width,c.height);c.toBlob(b=>b?ok(b):no(),"image/jpeg",.82)};im.onerror=no;im.src=URL.createObjectURL(f)});
-const saveFood=()=>db.collection("settings").doc("site").set({food:FOOD});
-$("adminBtn").onclick=()=>{adminOpen=!adminOpen;$("adminBtn").textContent=adminOpen?"Close owner":"Owner login";renderAdm();renderFood();if(adminOpen)$("restaurant").scrollIntoView({behavior:"smooth"})};
-document.addEventListener("change",async e=>{if(e.target.id!=="ff"||!assets)return;const m=$("fm");m.textContent="Uploading…";
- try{for(const f of e.target.files)FOOD.push((await assets.upload(await shrink(f))).url);await saveFood();m.textContent="Saved."}catch(err){m.textContent="Upload failed: "+(err.message||err.code||err)}});
-document.addEventListener("click",e=>{const t=e.target,d=t.dataset&&t.dataset.fd;
- if(d!==undefined){FOOD.splice(+d,1);saveFood().catch(()=>{})}
- else if(t.matches&&t.matches(".food img")){$("lb").firstChild.src=t.src;$("lb").hidden=false}});
+let FOOD=[],db=null;
+// Curated illustrative food photography shown until the owner adds real restaurant photos.
+const DEFAULT_FOOD=[
+"https://images.unsplash.com/photo-1743525700011-afac212694d7?auto=format&fit=crop&fm=jpg&q=80&w=1000",
+"https://images.unsplash.com/photo-1709926746119-eb84081ac78e?auto=format&fit=crop&fm=jpg&q=80&w=1000",
+"https://images.unsplash.com/photo-1773915950201-c417d02cf1e5?auto=format&fit=crop&fm=jpg&q=80&w=1000"
+];
+function renderFood(){const photos=FOOD.length?FOOD:DEFAULT_FOOD;$("food").innerHTML=photos.map(u=>`<div><img loading="lazy" src="${u}" alt="Food photography at Manel Restaurant"></div>`).join("");$("fn").textContent=FOOD.length?"":"A taste of Sri Lankan and tropical dining."}
+document.addEventListener("click",e=>{if(e.target.matches&&e.target.matches(".food img")){$("lb").firstChild.src=e.target.src;$("lb").hidden=false}});
 renderFood();
-(async()=>{try{const u=await claude.use("user");isAdmin=u?await u.canEdit():false;assets=await claude.use("assets");db=await claude.use("db");
- if(db)db.collection("settings").doc("site").onSnapshot(x=>{const d=x.data()||{};FOOD=d.food||[];renderFood()},()=>{});renderAdm()}catch(e){}})();
+(async()=>{try{db=await claude.use("db");if(db)db.collection("settings").doc("site").onSnapshot(x=>{const d=x.data()||{};FOOD=Array.isArray(d.food)?d.food:[];renderFood()},()=>{});}catch(e){}})();
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.08});
 document.querySelectorAll(".fade").forEach(e=>io.observe(e));
 </script></body></html>
